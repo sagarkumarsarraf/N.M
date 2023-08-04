@@ -1,0 +1,31 @@
+x = []
+y = []
+n = int(input("Enter the no. of element :"))
+print("Enter the element of x:")
+for i in range(0, n):
+  p = float(input())
+  x.append(p)
+print("Enter the element of y:")
+for i in range(0, n):
+  q = float(input())
+  y.append(q)
+ 
+print("Element of x",x)
+print("Element of y",y)
+s = 0
+for i in range(3, n - 1, 3):
+    print("si=",i)
+    s = s + y[i]
+    print("s=",s)
+    
+t = 0
+for i in range(2, n - 1,2 ):
+    print("ti=",i)
+    t = t + y[i]
+    
+p=t+y[1]
+print("T=",p)
+h = 0.5
+print("h=",h)
+A = (h * 3 / 8) * (y[0] + y[n-1] + (2 * s) + (3 * p))
+print("The required value  is ", A)
